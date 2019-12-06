@@ -1,0 +1,51 @@
+footer {
+    z-index: 90;
+    display: block;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 25px;
+    text-align: center;
+    background-color: cadetblue;
+    color: cornsilk;
+
+}
+
+section{
+    position: relative;
+    top: 20px;
+}
+
+#gallery div div div {
+    width: 25%;
+    height: 25%;
+    display: inline-block;
+    border-color: lightsteelblue;
+    border-style: solid;
+    border-radius: 15%;
+    margin: 5px;
+}
+
+
+#newestinfo div{
+    height: 100px;
+    width: 100%;
+    border-color: lightsteelblue;
+    border-style: solid;
+    border-radius: 15%;
+    text-align: center;
+}
+
+#newestinfo div li{
+    list-style: none;
+}
+
+#services div{
+    padding: 20px;
+    text-align: center;
+    width: 45%;
+    display: inline-block;
+    border-color: lightsteelblue;
+    border-style: solid;
+    border-radius: 10%;
+}
