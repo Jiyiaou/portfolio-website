@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh_TW">
 
 <head>
     <meta charset="UTF-8">
@@ -15,90 +15,75 @@
 </head>
 
 <body>
-    <script id="__bs_script__">
-        //<![CDATA[
-        document.write("<script async src='/browser-sync/browser-sync-client.js?v=2.26.7'><\/script>".replace("HOST",
-            location.hostname));
-        //]]>
-    </script>
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
-        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
-        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
-    </script>
-
-    </div>
-    
     <!-- 選單 -->
-    <nav style="z-index: 90;" class="navbar navbar-light bg-light navbar-expand-md">
-        <div class="container">
+    <nav style="z-index: 90; position: fixed;">
+        <div class="nav">
             <!-- LOGO -->
-            <a href="#" class="navbar-brand">
-                <img src="img/ladybug sticker-Mari.jpg" alt="logo" width="15%" height="15%" />
-            </a>
-            <!-- 選單按鈕 -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+            <img src="img/logo.png" alt="logo" width="5%" height=""
+                style="margin: 0px 20px 0px 20px;" />
+
             <!--選單內容-->
-            <div id="navbar-collapse" class="collapse navbar-collapse">
-                <ul class="navbar-nav ml-auto">
-                    <li><a href="#gallery" class="nav-link">作品展示</a></li>
-                    <li><a href="#newestinfo" class="nav-link">最新消息</a></li>
-                    <li><a href="#services" class="nav-link">服務項目</a></li>
-                    <li><a href="#aboutus" class="nav-link">關於我們</a></li>
-                    <li><a href="#contactus" class="nav-link">聯絡我們</a></li>
+            <div id="drop-down-menu">
+                <ul class="menu">
+                    <li class="itembox drop-down">
+                    <li><a href="#newestinfo">最新消息</a></li>
+                    <li><a href="#services">服務項目</a></li>
+                    <li><a href="#aboutus">關於我們</a></li>
+                    <li><a href="#gallery">作品展示</a></li>
+                    <li><a href="#contactus">聯絡我們</a></li>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
-    
+    <div class="container">
     <!--主視覺圖-->
-    <section id="banner" style="top: 0px;">
+    <section id="banner">
         <div>
             <img class="bannerpic" src="img/flower divination noword.jpg" alt="主視覺" width="100%">
         </div>
     </section>
-    <div class="container">
-    <section id="gallery">
-        <div>
-            <div class="row">
-                <div class="col-3"></div>
-                <div class="col-3"></div>
-                <div class="col-3"></div>
-                <div class="col-3"></div>
+
+        <section id="newestinfo">
+            <div style="height: 30px;">
+                <p>最新消息</p>
             </div>
-        </div>
-    </section>
+            <div class="list">
+                <li><a href="https://www.plurk.com/jiyiaou">Jiyiaou's plurk</a></li>
+                <li><a href="https://www.youtube.com">Youtube</a></li>
+                <li><a href="https://www.facebook.com">Facebook</a></li>
+            </div>
+        </section>
 
-    <section id="newestinfo">
-        <div style="height: 30px;"><p style="font-size: 15px;">最新消息</p></div>
-        <div>
-            <li><a herf="">1</a></li>
-            <li><a herf="">2</a></li>
-            <li><a herf="">3</a></li>
-        </div>
-    </section>
+        <section id="services">
+            <div style="height: 30px;">
+                <p>服務項目</p>
+            </div>
+        </section>
 
-    <section id="services">
-        <div><p>商業服務項目</p></div>
-        <div><p>非商業服務項目</p></div>
-    </section>
+        <section id="gallery">
+            <div><img src="img/logo.png" alt="logo" width="30%" height="auto"></div>
+        </section>
 
-    <section id="aboutus">
-
-    </section>
+        <section id="aboutus">
+            <div>
+                <p>關於我們</p>
+                <p>我們是四位多媒體設計系畢業的工作者，可以共同接案也接受個人委託。
+                    委託內容如：動畫製作、平面海報、CIS設計、人物美術、背景等等。
+                    想了解更多關於我們的個人作品，可以點擊上方的四人合圖進入。
+                </p>
+            </div>
+        </section>
+    </div>
 
     <section id="contactus">
-
+        <div>
+            <p><br>聯絡我們 <br>
+                (04)24xx-xxxx｜cat@gmail.com <br>
+            </p>
+        </div>
     </section>
 
-</div>
     <footer>Copyright@2019 We love cats</footer>
 </body>
 

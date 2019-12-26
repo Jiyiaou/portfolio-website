@@ -1,5 +1,10 @@
+p{
+    font-size: 14px;
+    font-family: Helvetica;
+}
+
 footer {
-    z-index: 90;
+    z-index: 50;
     display: block;
     position: fixed;
     bottom: 0px;
@@ -8,44 +13,113 @@ footer {
     text-align: center;
     background-color: cadetblue;
     color: cornsilk;
-
 }
 
-section{
-    position: relative;
-    top: 20px;
+.nav {
+    background-color: white;
+    align-items: center;
 }
 
-#gallery div div div {
-    width: 25%;
-    height: 25%;
+.nav div {
     display: inline-block;
-    border-color: lightsteelblue;
-    border-style: solid;
-    border-radius: 15%;
-    margin: 5px;
+}
+
+#drop-down-menu {
+    float: right;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul.menu {
+    border: #ccc 1px solid;
+    display: inline-block;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 13px;
+}
+
+ul.menu li {
+    position: relative;
+    white-space: nowrap;
+    border-right: #ccc 1px solid;
+}
+
+ul.menu>li:last-child {
+    border-right: none;
+}
+
+ul.menu>li {
+    float: right;
+}
+
+ul.menu a {
+    background-color: #fff;
+    color: #333;
+    display: block;
+    padding: 0 30px;
+    text-decoration: none;
+    line-height: 40px;
+
+}
+
+ul.menu a:hover {
+    background-color: #ef5c28;
+    color: #fff;
+}
+
+ul.menu li:hover>a {
+    background-color: #ef5c28;
+    color: #fff;
 }
 
 
-#newestinfo div{
+#gallery div {
+    width: 100%;
+    height: auto;
+    margin: 3px;
+}
+
+#newestinfo div {
     height: 100px;
     width: 100%;
     border-color: lightsteelblue;
     border-style: solid;
-    border-radius: 15%;
     text-align: center;
+    margin: 3px;
 }
 
-#newestinfo div li{
+#newestinfo div li {
     list-style: none;
 }
 
-#services div{
-    padding: 20px;
+#services div {
     text-align: center;
-    width: 45%;
-    display: inline-block;
+    width:100%;
     border-color: lightsteelblue;
     border-style: solid;
-    border-radius: 10%;
+    margin: 3px;
+}
+
+#aboutus div{
+    width:100%;
+    border-color: lightsteelblue;
+    border-style: solid;
+    text-align: center;
+    margin: 3px;
+}
+
+#aboutus p{
+    margin:20px 50px 20px 50px;
+}
+
+#contactus {
+    width: 100%;
+    height: 150px;
+    background-color: rgb(93, 105, 128);
+    color: cornsilk;
+    text-align: center;
+    margin: 3px;
 }
